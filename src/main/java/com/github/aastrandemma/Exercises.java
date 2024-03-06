@@ -1,5 +1,6 @@
 package com.github.aastrandemma;
 
+import com.github.aastrandemma.javaTime.JavaTimeExercises;
 import com.github.aastrandemma.string.StringExercises;
 import java.util.Scanner;
 
@@ -24,6 +25,7 @@ public class Exercises {
     private static void displayMenu() {
         System.out.println("0: To exit the application.");
         System.out.println("1: String exercises.");
+        System.out.println("2: Java Time Api exercises.");
     }
 
     private static int getChoice() {
@@ -44,6 +46,11 @@ public class Exercises {
             case 1:
                 System.out.println("\nShowing you String exercise:");
                 StringExercises.getStringExercises();
+                System.out.println("\n");
+                break;
+            case 2:
+                System.out.println("\nShowing you Java Time API exercise:");
+                JavaTimeExercises.getJavaTimeExercises();
                 System.out.println("\n");
                 break;
             default:
